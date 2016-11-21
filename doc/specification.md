@@ -19,6 +19,7 @@
   - WebStorm >> Settings >> Languages & Frameworks >> JavaScript >> Code Quality Tools >> JSHint
     - 选中 `Enable` + `Use config files` 
     - 配置 ` Custom configuration file `，选择上一步下载路径中 `/doc/.jshintrc`
+    - ![webstorm中配置jshint图示](./.jshintrc.jpeg =100x100)
 
 ## 前端编码规范
 ### 1. 规范的规范
