@@ -14,7 +14,11 @@
 - 中文docs：
   - [JSHint 配置浅析](http://jinlong.github.io/2014/10/25/jshint-configuration/?utm_source=tuicool&utm_medium=referral)
   - [jshint 配置说明](http://blog.csdn.net/u013261261/article/details/50236651)
-- .jshintrc文件地址
+- webstorm配置
+  - ` git clone https://github.com/diandainfo/dd_web.git ` 到本地
+  - WebStorm >> Settings >> Languages & Frameworks >> JavaScript >> Code Quality Tools >> JSHint
+    - 选中 `Enable` + `Use config files` 
+    - 配置 ` Custom configuration file `，选择上一步下载路径中 `/doc/.jshintrc`
 
 ## 前端编码规范
 ### 1. 规范的规范
