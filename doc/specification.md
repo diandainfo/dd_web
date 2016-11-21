@@ -16,10 +16,10 @@
   - [jshint 配置说明](http://blog.csdn.net/u013261261/article/details/50236651)
 - webstorm配置
   - ` git clone https://github.com/diandainfo/dd_web.git ` 到本地
-  - WebStorm >> Settings >> Languages & Frameworks >> JavaScript >> Code Quality Tools >> JSHint
+  - ` WebStorm >> Settings >> Languages & Frameworks >> JavaScript >> Code Quality Tools >> JSHint`
     - 选中 `Enable` + `Use config files` 
     - 配置 ` Custom configuration file `，选择上一步下载路径中 `/doc/.jshintrc`
-    - ![webstorm中配置jshint图示](./.jshintrc.jpeg =100x100)
+    - ![webstorm中配置jshint图示](./.jshintrc.jpeg)
 
 ## 前端编码规范
 ### 1. 规范的规范
