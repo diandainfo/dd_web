@@ -3,4 +3,4 @@
 
 ## 文档
 
-- [前端web编码规范](./specification.md)
+- [前端web编码规范](./doc/specification.md)
