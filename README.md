@@ -3,4 +3,4 @@
 
 ## 文档
 
-- [编码规范](./specification/readme.md)
+- [前端web编码规范](./specification.md)
