@@ -7,6 +7,15 @@
   - 《javascript dom编程艺术》
   - 《高性能JavaScript》
 
+## jsHint配置
+- docs
+  - 配置说明：[JSHint Documentation](http://jshint.com/docs/)
+  - 参数说明：[JSHint Options](http://jshint.com/docs/options/)
+- 中文docs：
+  - [JSHint 配置浅析](http://jinlong.github.io/2014/10/25/jshint-configuration/?utm_source=tuicool&utm_medium=referral)
+  - [jshint 配置说明](http://blog.csdn.net/u013261261/article/details/50236651)
+- .jshintrc文件地址
+
 ## 前端编码规范
 ### 1. 规范的规范
 - 以下：
