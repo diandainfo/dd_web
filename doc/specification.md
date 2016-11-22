@@ -12,9 +12,9 @@
   - 配置说明：[JSHint Documentation](http://jshint.com/docs/)
   - 参数说明：[JSHint Options](http://jshint.com/docs/options/)
 - 中文docs：
+  - [JSHint配置项说明](http://www.jianshu.com/p/4cb23f9e19d3)
   - [JSHint 配置浅析](http://jinlong.github.io/2014/10/25/jshint-configuration/?utm_source=tuicool&utm_medium=referral)
   - [jshint 配置说明](http://blog.csdn.net/u013261261/article/details/50236651)
-  - [JSHint配置项说明](http://www.jianshu.com/p/4cb23f9e19d3)
 - webstorm配置
   - ` git clone https://github.com/diandainfo/dd_web.git ` 到本地
   - ` WebStorm >> Settings >> Languages & Frameworks >> JavaScript >> Code Quality Tools >> JSHint`
@@ -22,6 +22,32 @@
     - 配置 ` Custom configuration file `，选择上一步下载路径中 `/doc/.jshintrc`
       ![webstorm中配置jshint图示](./.jshintrc.jpeg)
     - apply设定后，查看项目中任意一个js文件，可以看到对应的错误提示和警告  
+- 特例配置，开发中遇到以下报错允许单独配置
+  - 参考[《JSHint配置项说明》 - 文／9I（简书作者）](http://www.jianshu.com/p/4cb23f9e19d3)
+  - 内联配置
+    - 除了使用配置文件,您可以在你的文件中使用jshint或者globals开头，并跟着配置项以冒号分隔值列表来配置JSHint。
+    - 例如,下面的代码片段将启用警告未定义的和未使用的变量，告诉JSHint全局变量命名MY_GLOBAL1、MY_GLOBAL2。
+    
+	  ```
+      // -jshint- 此处说明以下为jshint的特例注释，即“注释的注释”
+      /* jshint undef: true, unused: true */
+	  /* globals MY_GLOBAL1,MY_GLOBAL2 */
+	  ```
+    - 可以使用单行或者多行来配置JSHint，如果放在函数里面，则只影响该函数。
+  - JSHint 忽略
+    - ignore 告诉jshint忽略一个代码块,在jshint ignore:start和 ignore:end之间的所有代码都将被JSHint忽略
+    
+      ```
+	  // Code here will be linted with JSHint.
+	  /* jshint ignore:start */
+	  // Code here will be ignored by JSHint.
+	  /* jshint ignore:end */
+	  ``` 
+    - 可以忽略一行:
+    
+      ```
+	  ignoreThis(); // jshint ignore:line
+	  ```
 
 ## 前端编码规范
 ### 1. 规范的规范
