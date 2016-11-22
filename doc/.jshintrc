@@ -33,16 +33,22 @@
   "nonew": true,
   // 禁止使用错误的typeof类型
   "notypeof": true,
+  // 禁止使用eval
+  "evil": true,
   // 全局严格模式
   "strict": "global",
   // 禁止使用未声明的变量
   "undef": true,
   // 禁止生命未使用的变量
   "unused": true,
-  // 禁止使用eval
-  "evil": true,
-  /*
-   * 版本更新后停用的配置
+  // -- 忽略以下全局变量
+  "predef": [
+    'stts',
+    'mall'
+  ],
+
+  /**
+   * ---- 版本更新后停用的配置  ----
    */
   // 允许使用a['b']，而不是必须使用a.b
   "sub": true,
@@ -50,8 +56,9 @@
   "laxbreak": true,
   // 允许 , 开头的编码样式
   "laxcomma": true,
-  /*
-   * 环境，用于全局变量的识别
+
+  /**
+   * ---- 环境，用于全局变量的识别  ----
    */
   "browser": true,
   "browserify": true,
