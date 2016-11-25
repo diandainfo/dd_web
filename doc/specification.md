@@ -7,7 +7,7 @@
   - 《javascript dom编程艺术》
   - 《高性能JavaScript》
 
-## jsHint配置
+## 一、jsHint配置
 - docs
   - 配置说明：[JSHint Documentation](http://jshint.com/docs/)
   - 参数说明：[JSHint Options](http://jshint.com/docs/options/)
@@ -49,7 +49,7 @@
 	  ignoreThis(); // jshint ignore:line
 	  ```
 
-## 前端编码规范
+## 二、前端编码规范
 ### 1. 规范的规范
 - 以下：
   - **实义** : 即为与业务相关联，而非技术关键词；如商品信息表，使用 `goods-info` 而非 `list-table` 
@@ -158,7 +158,7 @@
   - 遵循 8\*8 原则,即sprite图的每个icon的高宽组合应是 8\*8 的倍率（16\*16 ...）
   - 使用icon应使用通用的scss的function来提取sprite对应位置
 
-## 参考文档
+## 三、参考文档
 - Bootstrap
   - [BootCss编码规范](http://codeguide.bootcss.com/#html-syntax)
   - [GitHub : necolas/idiomatic-css](https://github.com/necolas/idiomatic-css)
