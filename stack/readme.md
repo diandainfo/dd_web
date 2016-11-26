@@ -11,6 +11,7 @@
 
 - [阿里巴巴国际UED团队](http://www.aliued.com/)
 - [百度EFE（Excellent FrontEnd）技术体系](http://efe.baidu.com/)
+
 ### 2. 前端业内先行者
 > 知乎 >> [《国内有哪些前端开发牛人？》](https://www.zhihu.com/question/19701162)
 
@@ -27,6 +28,7 @@
 
 ## 二、 前端流行性趋势
 > [BootCDN](http://www.bootcdn.cn/) 提供基于Github stars数的项目排名，亦能代表前端技术热度、趋势
+
 > [知乎 >> 前端外刊评论](https://zhuanlan.zhihu.com/FrontendMagazine) 关注前端前沿技术，探寻业界深邃思想
 
 ### 1. 模块化 
@@ -57,12 +59,15 @@
 
 ### 0. Event Loop
 > 2013-10-21 [《什么是 Event Loop？》 - 阮一峰](http://www.ruanyifeng.com/blog/2013/10/event_loop.html)
+
 > 2014-10-08 [《JavaScript 运行机制详解：再谈Event Loop》 - 阮一峰](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
+
 > 2014-10-11 《【朴灵评注】JavaScript 运行机制详解：再谈Event Loop》
   - http://www.360doc.com/content/14/1011/13/15077656_416048738.shtml 
   - http://blog.csdn.net/lin_credible/article/details/40143961
 
 > [Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
+
 > [并发模型与Event Loop](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
 
 ### 1. SEO
