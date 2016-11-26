@@ -8,10 +8,12 @@
 
 ### 1. 优秀团队主站
 > 知乎 >> [《国内的前端团队分布和前景是怎样的？》](https://www.zhihu.com/question/20888075)
+
 - [阿里巴巴国际UED团队](http://www.aliued.com/)
 - [百度EFE（Excellent FrontEnd）技术体系](http://efe.baidu.com/)
 ### 2. 前端业内先行者
 > 知乎 >> [《国内有哪些前端开发牛人？》](https://www.zhihu.com/question/19701162)
+
 - 知乎个人页
   - [玉伯](https://www.zhihu.com/people/lifesinger/answers)
   - [黄玄](https://www.zhihu.com/people/huxpro/answers)
@@ -29,11 +31,14 @@
 
 ### 1. 模块化 
 > **浏览器端模块化开发**
+
 - 发展
   > [《JavaScript 模块化七日谈》 - 黄玄](http://huangxuan.me/js-module-7day/#/)
   > [《前端模块管理器简介》 - 阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html) 
+  
 - 阵营
   > 知乎 >> [《AMD 和 CMD 的区别有哪些？》](http://www.zhihu.com/question/20351507/answer/14859415)
+  
   - CommonJS
   - AMD ( Asynchronous Module Definition )
     - [require.js](http://requirejs.org/)
@@ -57,10 +62,8 @@
   - http://www.360doc.com/content/14/1011/13/15077656_416048738.shtml 
   - http://blog.csdn.net/lin_credible/article/details/40143961
 
-
 > [Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 > [并发模型与Event Loop](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
-
 
 ### 1. SEO
 > [《如何让搜索引擎抓取AJAX内容？》 - 阮一峰](http://www.ruanyifeng.com/blog/2013/07/how_to_make_search_engines_find_ajax_content.html)
