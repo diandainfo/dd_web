@@ -43,14 +43,14 @@
   "unused": true,
   // -- 忽略以下全局变量
   "predef": [
-    'stts',
-    'mall'
+    "stts",
+    "mall"
   ],
 
   /**
    * ---- 版本更新后停用的配置  ----
    */
-  // 允许使用a['b']，而不是必须使用a.b
+  // 允许使用a["b"]，而不是必须使用a.b
   "sub": true,
   // 允许 不安全的行中断
   "laxbreak": true,
