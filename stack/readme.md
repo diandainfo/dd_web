@@ -36,6 +36,7 @@
 
 - 发展
   > [《JavaScript 模块化七日谈》 - 黄玄](http://huangxuan.me/js-module-7day/#/)
+  
   > [《前端模块管理器简介》 - 阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html) 
   
 - 阵营
