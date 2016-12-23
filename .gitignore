@@ -1,0 +1,13 @@
+# Ignore webstorm config
+.idea
+
+# Ignore node-modules
+node_modules
+
+# Ignore logs
+logs/http/*.log
+logs/http/*.log-*
+logs/*.log
+
+# Ignore .DS_Store @Mac
+.DS_Store
