@@ -12,9 +12,9 @@
   - 配置说明：[JSHint Documentation](http://jshint.com/docs/)
   - 参数说明：[JSHint Options](http://jshint.com/docs/options/)
 - 中文docs：
-  - [JSHint配置项说明](http://www.jianshu.com/p/4cb23f9e19d3)
-  - [JSHint 配置浅析](http://jinlong.github.io/2014/10/25/jshint-configuration/?utm_source=tuicool&utm_medium=referral)
-  - [jshint 配置说明](http://blog.csdn.net/u013261261/article/details/50236651)
+  > - [JSHint配置项说明](http://www.jianshu.com/p/4cb23f9e19d3)
+  > - [JSHint 配置浅析](http://jinlong.github.io/2014/10/25/jshint-configuration/?utm_source=tuicool&utm_medium=referral)
+  > - [jshint 配置说明](http://blog.csdn.net/u013261261/article/details/50236651)
 - webstorm配置
   - ` git clone https://github.com/diandainfo/dd_web.git ` 到本地
   - ` WebStorm >> Settings >> Languages & Frameworks >> JavaScript >> Code Quality Tools >> JSHint`
@@ -66,21 +66,45 @@
 
 ### 3. JavaScript
 - **高内聚，低耦合**
-  - [什么是高内聚、低耦合？](http://www.cnblogs.com/robnetcn/archive/2012/04/15/2449008.html)
-  - [图解7种耦合关系](https://zhuanlan.zhihu.com/p/22281389)
-  - [如何使JS代码达到低耦合，高内聚？](https://www.zhihu.com/question/35527487)
-  - [程序员们总说的代码要优雅，这个优雅到底指什么？](https://www.zhihu.com/question/33320738)
+  > - [什么是高内聚、低耦合？](http://www.cnblogs.com/robnetcn/archive/2012/04/15/2449008.html)
+  > - [图解7种耦合关系](https://zhuanlan.zhihu.com/p/22281389)
+  > - [如何使JS代码达到低耦合，高内聚？](https://www.zhihu.com/question/35527487)
+  > - [程序员们总说的代码要优雅，这个优雅到底指什么？](https://www.zhihu.com/question/33320738)
+
+- IDE的提示
+  - **单词拼写错误（绿色波浪下划线）**
+  - 代码提交前必须进行`格式化`
+  - 注意IDE（webStorm）的提示和报错信息
+  - 注意JSHint的提示和报错信息
 - 通用规则
   - 文件名：
     - JavaScript文件名应尽可能的使用一个便于识别该js文件功能的英文单词（不要使用拼音）,若一个英文单词无法命名，则应进行分层，如：`goodsInfo.js` 拆分为 `goods/info/index.js`
     - 模块、功能的主文件、入口文件应以“index.js”命名，便于webpack打包压缩和require时读取
   - 大小写：
+
+    |用法|首字母|后缀（单词间连接）|
+    |:--|--:|--:|
+    |常量|大写|大写|
+    |变量|小写|驼峰|
+    |方法、函数|小写|驼峰|
+    |对象|大写|驼峰|
+    |id选择器|小写|_|
+    |class选择|小写|-|
+
   - 代码可读性：
     - 单行代码不应超过可视范围内，以 font-size=16 时，字符 **100** 为限
     - 多行代码间，若无明显相关性，应使用单个空行进行分割，便于区分逻辑； `代码` 和 `代码的注释` 之间无需加空行
+    - 使用`三目运算符`（`? :`）
   - 单一权责:
     - 每个function只能进行3个功能的逻辑运行，行数不得超过10行，否则应分拆为闭包函数
-  
+- jQuery语法
+  - 选择器
+    - 同文件出现2次以上的选择器，应使用变量赋值，但应注意input等元素的侦听问题
+    - 同文件内出现相同字符串，应使用变量赋值
+    - 同文件内出现动态key，超过5个使用for进行初始化，如modal的form中有多个input，reset的触发事件
+    - 跨文件，复杂度较高的方法应提取公用方法
+    - 选择器链式写法不超过3段链
+    - 选择器内不超过3个层级
 - 注释
   - 文件标准头部，**设置webstorm的js文件模板**
   
@@ -105,6 +129,8 @@
 	}
     ```
 - 全局变量
+  - **禁止非必要（即有限作用域）的全局变量**
+  - 使用`let`进行变量声明
 	```
 	//- 全局变量分为常量、变量、封装构造体、通用函数
 	
@@ -146,8 +172,16 @@
   - data
     - ajax应进行error的处理，success中只允许复制，返回或回调只允许在`complete`中完成
   - listener 
-	- 事件绑定使用 jQuery的 `on` ，绑定在ejs中存在的元素中，ajax拼接的元素可在元素拼装完成后进行`on`的监听绑定
-	- 表单事件应使用 `one` 事件进行防重;在ajax的complete中，注意重新绑定一次`one`事件
+	 - 事件绑定使用 jQuery的 `on` ，绑定在ejs中存在的元素中，ajax拼接的元素可在元素拼装完成后进行`on`的监听绑定
+	 - 表单事件应使用 `one` 事件进行防重;在ajax的complete中，注意重新绑定一次`one`事件
+	 - 不再建议使用`delegate`进行事件绑定
+- 安全
+  - 表单
+    - 表单的提交需要进行前端验证（是否输入内容）和校验（输入内容是否为正确类型）
+    - `input`应进行`XSS`等防注入攻击
+  - `request` & `response`
+    - 后端路由层应进行字段的转换，不允许数据字段直接暴露在页面请求中
+    - 请求参数应进行加密和校验
 
 ### 4. SCSS/CSS
 - 语法:
@@ -176,3 +210,4 @@
   - [前端编码规范（2）—— HTML 规范](http://www.css88.com/archives/5364)
   - [前端编码风格规范（3）—— JavaScript 规范](http://www.css88.com/archives/5366)
   - [前端编码规范（4）—— CSS 和 Sass (SCSS) 规范](http://www.css88.com/archives/5505)
+- [前端页面规范](http://bj.jjj.qq.com/zt/guifan/index.htm)
