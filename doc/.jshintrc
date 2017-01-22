@@ -14,7 +14,7 @@
   // 允许使用 == 和 !=
   "eqeqeq": false,
   // ECMAScirpt版本
-  "esversion": 5,
+  "esversion": 6,
   // 强制在 for in 中使用hasOwnProperty进行自属性检查
   "forin": true,
   // 不允许变更原型链，new Date().format()使用局部jsHint检查
@@ -43,10 +43,8 @@
   "unused": true,
   // -- 忽略以下全局变量
   "predef": [
-    "stts",
-    "mall"
+    "Bcs","global","CAS","module","require","BAS","wx","App","Page"
   ],
-
   /**
    * ---- 版本更新后停用的配置  ----
    */
@@ -56,7 +54,6 @@
   "laxbreak": true,
   // 允许 , 开头的编码样式
   "laxcomma": true,
-
   /**
    * ---- 环境，用于全局变量的识别  ----
    */
